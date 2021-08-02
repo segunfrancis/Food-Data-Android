@@ -42,7 +42,9 @@ android {
 }
 
 dependencies {
-    implementation(project(":usecase"))
+    implementation(project(":domain"))
+    implementation(project(":data:remote"))
+    implementation(project(":data:datasource"))
     implementation(Dependency.KOTLIN_STANDARD_LIBRARY)
     implementation(Dependency.CORE_KTX)
     implementation(Dependency.APPCOMPAT)
@@ -53,11 +55,15 @@ dependencies {
     implementation(Dependency.LIFECYCLE_EXTENSION)
     implementation(Dependency.VIEWMODEL)
     implementation(Dependency.LIVEDATA)
-    implementation(Dependency.NAVIGATION_FRAGMENT)
+    implementation(Dependency.FRAGMENT_KTX)
+    implementation(Dependency.NAVIGATION_FRAGMENT_KTX)
     implementation(Dependency.NAVIGATION_UI)
     implementation(Dependency.Log.TIMBER)
     implementation(Dependency.DI.DAGGER)
     kapt(Dependency.DI.DAGGER_COMPILER)
+    implementation(Dependency.Network.RETROFIT)
+    implementation(Dependency.Network.RETROFIT_GSON)
+    implementation(Dependency.Network.OK_HTTP_INTERCEPTOR)
     testImplementation(Dependency.Test.J_UNIT)
     androidTestImplementation(Dependency.Test.J_UNIT_EXT)
     androidTestImplementation(Dependency.Test.ESPRESSO_CORE)

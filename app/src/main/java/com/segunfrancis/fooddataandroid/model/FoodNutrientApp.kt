@@ -1,6 +1,6 @@
-package com.segunfrancis.usecase.model
+package com.segunfrancis.fooddataandroid.model
 
-data class FoodNutrientUC(
+data class FoodNutrientApp(
     val amount: Double,
     val name: String,
     val number: String,

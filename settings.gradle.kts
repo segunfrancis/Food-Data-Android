@@ -1,4 +1,3 @@
-include(":usecase")
 include(":domain")
 include(":feature:details")
 dependencyResolutionManagement {
@@ -11,3 +10,4 @@ dependencyResolutionManagement {
 rootProject.name = "Food Data Android"
 include(":app")
 include(":data:remote")
+include(":data:datasource")

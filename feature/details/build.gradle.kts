@@ -4,16 +4,13 @@ plugins {
 }
 
 android {
-    //compileSdk = Version.targetSdk
     buildToolsVersion = Version.buildToolsVersion
 
     defaultConfig {
         applicationId = "com.segunfrancis.details"
         minSdk = Version.minSdk
         targetSdk = Version.targetSdk
-        versionCode = 1
-        versionName = "1.0"
-
+        compileSdkVersion(Version.targetSdk)
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -22,6 +19,11 @@ android {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
 

@@ -13,6 +13,7 @@ object Version {
     const val espresso = "3.3.0"
     const val testAnnotation = "1.2.0"
     const val dagger = "2.37"
+    const val inject = "1"
     const val retrofit = "2.9.0"
     const val okHttp = "4.9.0"
     const val timber = "4.7.1"

@@ -12,6 +12,5 @@ dependencies {
     implementation(project(":domain"))
     implementation(Dependency.KOTLIN_STANDARD_LIBRARY)
     implementation(Dependency.COROUTINE)
-    implementation(Dependency.DI.DAGGER)
-    implementation(Dependency.DI.DAGGER_COMPILER)
+    implementation(Dependency.DI.INJECT)
 }

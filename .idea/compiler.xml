@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.7" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="Food_Data_Android.app" target="1.8" />
+      <module name="Food_Data_Android.buildSrc" target="1.8" />
+      <module name="Food_Data_Android.data.remote" target="1.8" />
+      <module name="Food_Data_Android.feature.details" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

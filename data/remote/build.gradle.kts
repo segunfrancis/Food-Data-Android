@@ -43,7 +43,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":domain"))
+    implementation(project(":data:datasource"))
     implementation(Dependency.CORE_KTX)
     implementation(Dependency.APPCOMPAT)
     implementation(Dependency.COROUTINE)

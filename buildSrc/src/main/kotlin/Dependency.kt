@@ -7,7 +7,8 @@ object Dependency {
     const val LIFECYCLE_EXTENSION = "androidx.lifecycle:lifecycle-extensions:${Version.lifecycle}"
     const val VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.lifecycle_unstable}"
     const val LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:${Version.lifecycle_unstable}"
-    const val NAVIGATION_FRAGMENT = "androidx.fragment:fragment-ktx:${Version.fragment}"
+    const val FRAGMENT_KTX = "androidx.fragment:fragment-ktx:${Version.fragment}"
+    const val NAVIGATION_FRAGMENT_KTX = "androidx.navigation:navigation-fragment-ktx:${Version.navigation}"
     const val NAVIGATION_UI = "androidx.navigation:navigation-ui-ktx:${Version.navigation}"
     const val KOTLIN_STANDARD_LIBRARY = "org.jetbrains.kotlin:kotlin-stdlib:${Version.gradlePlugin}"
     const val LEGACY_SUPPORT = "androidx.legacy:legacy-support-v4:${Version.legacy}"
@@ -21,6 +22,7 @@ object Dependency {
     object DI {
         const val DAGGER = "com.google.dagger:dagger:${Version.dagger}"
         const val DAGGER_COMPILER = "com.google.dagger:dagger-compiler:${Version.dagger}"
+        const val INJECT = "javax.inject:javax.inject:${Version.inject}"
     }
 
     object Log {

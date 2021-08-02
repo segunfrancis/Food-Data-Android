@@ -11,4 +11,5 @@ java {
 dependencies {
     implementation(Dependency.KOTLIN_STANDARD_LIBRARY)
     implementation(Dependency.COROUTINE)
+    implementation(Dependency.DI.INJECT)
 }

@@ -11,7 +11,7 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:${Version.gradle}")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.gradlePlugin}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.10")
         classpath("com.github.ben-manes:gradle-versions-plugin:${Version.versions}")
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle.kts files
