@@ -6,9 +6,19 @@
     tools:context=".ui.home.HomeFragment">
 
     <TextView
+        android:id="@+id/text"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/hello_blank_fragment"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/items_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/hello_blank_fragment" />
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_food_home" />
 
 </FrameLayout>
