@@ -9,11 +9,13 @@ import com.segunfrancis.fooddataandroid.R
 import com.segunfrancis.fooddataandroid.databinding.ItemFoodHomeBinding
 import com.segunfrancis.fooddataandroid.model.BaseResponseItemApp
 
-class HomeRecyclerAdapter : ListAdapter<BaseResponseItemApp, HomeRecyclerAdapter.HomeViewHolder>(HomeDiffUtil()) {
+class HomeRecyclerAdapter(private val onItemClick: (BaseResponseItemApp) -> Unit) : ListAdapter<BaseResponseItemApp, HomeRecyclerAdapter.HomeViewHolder>(HomeDiffUtil()) {
 
-    class HomeViewHolder(private val binding: ItemFoodHomeBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class HomeViewHolder(private val binding: ItemFoodHomeBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(itemApp: BaseResponseItemApp) = with(binding) {
             descriptionText.text = itemApp.description
+            pubDate.text = itemApp.publicationDate
+            root.setOnClickListener { onItemClick(itemApp) }
         }
     }
 

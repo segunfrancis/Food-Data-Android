@@ -5,7 +5,8 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.fragment.app.viewModels
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.segunfrancis.fooddataandroid.databinding.FragmentHomeBinding
 import com.segunfrancis.fooddataandroid.FoodDataApplication
 import com.segunfrancis.fooddataandroid.R
@@ -23,7 +24,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private val viewModel: HomeViewModel by viewModels { factory }
 
-    private val homeAdapter: HomeRecyclerAdapter by lazy { HomeRecyclerAdapter() }
+    private val homeAdapter: HomeRecyclerAdapter by lazy { HomeRecyclerAdapter { } }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -41,7 +42,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private fun setupList() {
         binding.itemsRecyclerView.apply {
             adapter = homeAdapter
-            layoutManager = LinearLayoutManager(requireContext())
+            layoutManager = StaggeredGridLayoutManager(2, RecyclerView.VERTICAL)
         }
     }
 

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Food Data Android</string>
     <string name="title_details">Food Details</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_published_date">"Published Date: "</string>
 </resources>
